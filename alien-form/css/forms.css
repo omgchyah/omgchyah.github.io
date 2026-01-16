@@ -7,8 +7,9 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
-	padding: 0;
+	padding: 2rem 0 2rem 0;
 	background-image: url(../img/galaxy.jpg);
+	position: relative;
 }
 .wrapper {
 	width: 80%;
@@ -17,6 +18,13 @@ body {
 	display: flex;
 	flex-flow: row nowrap;
 	background-color: rgb(255, 165, 80);
+}
+
+h1, h3 {
+	font-family: "Bitcount Prop Double Ink", system-ui;
+	color: black;
+	text-align: center;
+	font-optical-sizing: auto;
 }
 p {
 	margin-bottom: 0;
@@ -98,7 +106,24 @@ input:not([type="radio"]):not([type="checkbox"]), textarea, select {
 	margin-bottom: 2rem;
 }
 
+.index-link {
+	border: 1px solid grey;
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	background-color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 15px;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	opacity: 0.6;
+	transition: all 0.3s ease-in-out;
+}
 
+.index-link:hover {
+	opacity: 1.0;
+}
 
 
 
