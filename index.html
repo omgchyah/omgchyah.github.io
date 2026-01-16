@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rossana Liendo</title>
+    <title>Rossana Liendo | Full Stack Developer & Problem Solver</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <h1>Rossana Liendo</h1>
+
+    <nav>
+        <div class="logo">RL</div>
+        <div class="nav-links">
+            <a href="index.html#about-me">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="index.html#contact" class="btn-nav">Let's Talk</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="images/nyhavn-canal.jpeg" alt="Nyhavn Canal in Copenhagen, Denmark" class="hero-img">
+            <h1>Rossana Liendo</h1>
+            <p class="tagline"><strong>Full Stack Developer</strong> | Barcelona</p>
+            <p class="bio">I don't just write code; I build solutions for real-world problems. From front-end finesse to back-end logic, I thrive in the space where creativity meets efficiency.</p>
+            <div class="social-links">
+                <a href="https://github.com/omgchyah" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rossana-liendo-esteves-7b033848/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-me" class="about-me">
+            <h2><i class="fa-solid fa-user-astronaut"></i> Beyond the Code</h2>
+            <div class="about-grid">
+                <p>When my hands are off the keyboard, I'm either scaling walls or experimenting with flavors in the kitchen. I believe the discipline of climbing and the precision of cooking make me a better engineer.</p>
+                
+                <div class="fun-facts">
+                    <div class="fact-card">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h3>Succulent Mode</h3>
+                        <p>In deep work, just add water. I grow steadily and focus intensely.</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fa-solid fa-utensils"></i>
+                        <h3>Logic & Flavor</h3>
+                        <p>Need a food-tech expert? I understand the domain from the pan to the server.</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                        <h3>Problem Solver</h3>
+                        <p>Climbing taught me that if a route is blocked, you find a new angle. Same with bugs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <figure class="quote-box">
+                <blockquote>"Inspiration exists, but it has to find you working."</blockquote>
+                <figcaption>— Austin Freeman</figcaption>
+            </figure>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2><i class="fa-solid fa-laptop-code"></i> Featured Work</h2>
+            
+            <div class="project-list">
+                <article class="project-item">
+                    <h3>Alien Abduction Order Form</h3>
+                    <p>A quirky UI exercise focused on form validation and user experience under "extraterrestrial" pressure.</p>
+                    <a href="begin/forms.html" target="_blank" rel="noopener" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="project-item">
+                    <h3>Vanilla JS Calculator</h3>
+                    <p>Demonstrating clean logic and arithmetic operations without the noise of heavy frameworks.</p>
+                    <a href="begin/calculator.html" target="_blank" rel="noopener" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+            </div>
+
+            <div class="learning-zone">
+                <p>Always sharpening the axe at <a href="https://www.codewars.com" target="_blank" rel="noopener">CodeWars <i class="fa-solid fa-terminal"></i></a></p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2><i class="fa-solid fa-paper-plane"></i> Get in Touch</h2>
+            <p>Have a project in mind or just want to talk about climbing routes in Barcelona?</p>
+            <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST" class="contact-form">
+                <input type="hidden" name="send_to" value="rossana.liendo@gmail.com">
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rossana Liendo. Built with sweat, caffeine, and HTML/CSS.</p>
+    </footer>
 </body>
 </html>
