@@ -14,10 +14,14 @@
 <body>
 
     <nav>
-        <div class="nav-links">
-            <a href="index.html#about-me">About</a> |
-            <a href="index.html#projects">Projects</a> |
-            <a href="hobbies.html">Hobbies</a> |
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="index.html#about-me">About</a> <span class="nav-divider">|</span>
+            <a href="index.html#projects">Projects</a> <span class="nav-divider">|</span>
+            <a href="hobbies.html">Hobbies</a> <span class="nav-divider">|</span>
             <a href="index.html#contact" class="btn-nav">Let's Talk</a>
         </div>
     </nav>
@@ -96,5 +100,6 @@
         <p>&copy; 2024 Rossana Liendo. All rights reserved.</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

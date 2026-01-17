@@ -13,10 +13,14 @@
 <body>
 
     <nav>
-        <div class="nav-links">
-            <a href="index.html#about-me">About</a> |
-            <a href="index.html#projects">Projects</a> |
-            <a href="hobbies.html">Hobbies</a> |
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="index.html#about-me">About</a> <span class="nav-divider">|</span>
+            <a href="index.html#projects">Projects</a> <span class="nav-divider">|</span>
+            <a href="hobbies.html">Hobbies</a> <span class="nav-divider">|</span>
             <a href="index.html#contact" class="btn-nav">Let's Talk</a>
         </div>
     </nav>
@@ -77,7 +81,7 @@
 
                 <article class="project-item">
                     <h3>Calculator</h3>
-                    <p>Creating the structure and appearance of a calculator.</p>
+                    <p>Creating a calculatori with HTML, CSS and vanilla JS.</p>
                     <a href="calculator/calculator.html" rel="noopener" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
 
@@ -85,6 +89,12 @@
                     <h3>Book Editing</h3>
                     <p>Editing and formatting a classic book for digital publication.</p>
                     <a href="book_chapter/book.html" rel="noopener" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="project-item">
+                    <h3>Dog App</h3>
+                    <p>Creating a random Dog photo generator using <a href="https://dog.ceo/dog-api/">Dog API</a>.</p>
+                    <a href="dog-app/index.html" rel="noopener" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
             </div>
 
@@ -139,5 +149,6 @@
     <footer>
         <p>&copy; 2026 Rossana Liendo. Built with sweat, caffeine, and HTML/CSS.</p>
     </footer>
+    <script src="js/script.js"></script>t>
 </body>
 </html>

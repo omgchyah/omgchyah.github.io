@@ -77,3 +77,22 @@ header {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+.index-link {
+	border: 1px solid grey;
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	background-color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 15px;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	opacity: 0.6;
+	transition: all 0.3s ease-in-out;
+}
+
+.index-link:hover {
+	opacity: 1.0;
+}
