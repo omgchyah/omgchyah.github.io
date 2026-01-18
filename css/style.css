@@ -26,20 +26,19 @@ nav {
     width: 100%;
     background-color: var(--main-bg);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    gap: 1rem;
-    margin: 0;
+    padding: 1rem 10%; 
     z-index: 1000;
-    box-shadow: 0 10px 30px rgba(116, 116, 116, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 nav .nav-links {
     display: flex;
-    justify-content: space-between;
-    gap: 3rem;
+    gap: 2rem;
+    align-items: center;
 }
 
 nav a:link {
@@ -278,7 +277,7 @@ footer {
 }
 
 .hobbies-container {
-    display:grid;
+    display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
     padding: 2rem 10%;
@@ -309,10 +308,7 @@ footer {
 
 .sidebar {
     position: sticky;
-    top: 120px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    top: 100px;
 }
 
 .sidebar h3 {
@@ -378,16 +374,6 @@ nav .menu-toggle {
 }
 
 @media (max-width: 744px) {
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 1rem 5%;
-        min-height: 60px;
-        width: 100%;
-        box-sizing: border-box;
-    }
 
     .menu-toggle {
         display: block !important;
@@ -395,21 +381,6 @@ nav .menu-toggle {
         font-size: 2rem;
         z-index: 2000;
         position: sticky;
-    }
-
-    nav .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--main-bg);
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 0;
-        gap: 2rem;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-
     }
 
     nav .nav-links.active {
@@ -425,5 +396,37 @@ nav .menu-toggle {
         flex-direction: column;
         gap: 1rem;
         margin-bottom: 1.5rem;
+        height: 25%;
+    }
+
+    .hobbies-container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    nav .nav-links {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--main-bg);
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    .sidebar {
+        position: static;
+        margin-top: 2rem;
     }
 }
