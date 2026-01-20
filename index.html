@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rossana Liendo | Full Stack Developer & Problem Solver</title>
+    <meta name="description" content="Portfolio of Rossana Liendo, a Full Stack Developer based in Barcelona. Showcasing projects, skills, and contact information.">
+    <!-- Added a meta description -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+    <!-- Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity.  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!-- Can be installed as a it instead of requesting a CDN -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://maps.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://maps.gstatic.com https://*.googleapis.com;">
+    <!-- Added a Content Security Policy (CSP) to enhance security by restricting resource loading -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+    <!-- Added defer to the script to improve page load performance -->
 </head>
 <body>
 
@@ -27,6 +36,9 @@
 
     <header class="hero">
         <img src="images/nyhavn-canal.jpeg" alt="Nyhavn Canal in Copenhagen, Denmark" class="hero-img">
+        <!-- Can reduce size of image Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.
+        78.5 KiB
+        This image file is larger than it needs to be (685x600) for its displayed dimensions (173x152). Use responsive images to reduce the image download size. -->
         <div class="hero-content">
             <h1>Rossana<br>Liendo</h1>
             <p class="tagline"><strong>Full Stack Developer</strong> | Barcelona</p>
@@ -76,25 +88,26 @@
                 <article class="project-item">
                     <h3>Alien Abduction Order Form</h3>
                     <p>A quirky UI exercise focused on user experience under "extraterrestrial" pressure.</p>
-                    <a href="alien-form/forms.html" rel="noopener" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="alien-form/forms.html" rel="noopener" class="project-link" aria-label="View Alien Abduction Order Form project">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                <!-- Added an aria-label to describe the links and better the a11y -->
                 </article>
 
                 <article class="project-item">
                     <h3>Calculator</h3>
-                    <p>Creating a calculatori with HTML, CSS and vanilla JS.</p>
-                    <a href="calculator/calculator.html" rel="noopener" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    <p>Creating a calculator with HTML, CSS and vanilla JS.</p>
+                    <a href="calculator/calculator.html" rel="noopener" class="project-link" aria-label="View calculator project">View Project <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
 
                 <article class="project-item">
                     <h3>Book Editing</h3>
                     <p>Editing and formatting a classic book for digital publication.</p>
-                    <a href="book_chapter/book.html" rel="noopener" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="book_chapter/book.html" rel="noopener" class="project-link" aria-label="View Book editing project">View Project <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
 
                 <article class="project-item">
                     <h3>Dog App</h3>
                     <p>Creating a random Dog photo generator using <a href="https://dog.ceo/dog-api/">Dog API</a>.</p>
-                    <a href="dog-app/index.html" rel="noopener" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="dog-app/index.html" rel="noopener" class="project-link" aria-label="View Dog App project">View Project <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
             </div>
 
@@ -119,10 +132,11 @@
                     <input type="email" id="email" name="email" placeholder="email@example.com" required>
                 </div>
     
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="email@example.com" required>
-                </div>
+                </div> -->
+                <!-- Repeated label and input -->
                 
                 <div class="form-group">
                     <label for="phone">Phone</label>
@@ -139,7 +153,10 @@
         </section>
 
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23946.71913211791!2d2.1004685909337675!3d41.38842441053384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4985c69108ab9%3A0xd53cd8df2fd26b9c!2sLes%20Corts%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1768590886248!5m2!1ses!2ses" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-corts"></iframe>
+            <a href="https://maps.app.goo.gl/gcHCX3pQh8nZv8MN7" target="_blank" rel="noopener">
+                <img src="images/les-corts-map.png" alt="Map showing Les Corts neighborhood in Barcelona" class="map-image" width="300px">
+            </a>
+            <!-- Added a static image and a link to the Google Maps embed -->
             <span class="map-text">Find me in Les Corts!</span>
         </div>
         
